@@ -2,7 +2,7 @@ import re,time
 import matplotlib.pyplot as plt
 filname=input("请输入文件名：")
 with open(filname,'r') as f:
-    datas=f.read().strip()
+    datas=f.read()
 number={}
 shuju,biaoqian=[],[]
 data=re.sub('[^a-zA-Z]',"",datas).lower()
